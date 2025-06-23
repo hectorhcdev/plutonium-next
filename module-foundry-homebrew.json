@@ -1,0 +1,104 @@
+{
+	"id": "plutonium HomebrewHC",
+	"title": "Plutonium HomebrewHC",
+	"description": "A <a href=\"https://5e.tools\" target=\"_blank\" rel=\"noopener noreferrer\">5etools</a> integration for Foundry VTT.",
+	"version": "2.9.0",
+	"authors": [
+		{
+			"name": "hectorhcdev",
+			"url": "https://github.com/hectorhcdev",
+			"discord": "hectorhcdev",
+			"flags": {
+				"github": "hectorhcdev"
+			}
+		}
+	],
+	"readme": "README.md",
+	"license": "UNLICENSED",
+	"bugs": "https://discord.gg/nGvRCDs",
+	"changelog": "https://raw.githubusercontent.com/hectorhcdev/plutonium-next/master/CHANGELOG.md",
+	"url": "hectorhcdev",
+	"manifest": "https://raw.githubusercontent.com/hectorhcdev/plutonium-next/master/module-foundry-homebrew.json",
+	"download": "https://github.com/hectorhcdev/plutonium-next/raw/master/plutonium-foundry-HomebrewHC.zip",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13.345",
+		"maximum": "13.999"
+	},
+	"socket": true,
+	"persistentStorage": true,
+	"esmodules": [
+		"./js/Bundle.js"
+	],
+	"styles": [
+		"./css/main.css"
+	],
+	"packs": [
+		{
+			"name": "macros",
+			"label": "Macros",
+			"system": "dnd5e",
+			"path": "./packs/macros.db",
+			"type": "Macro"
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "5.0.0",
+					"verified": "5.0.3",
+					"maximum": "5.0.999"
+				}
+			},
+			{
+				"id": "dnd4e",
+				"type": "system"
+			},
+			{
+				"id": "lancer",
+				"type": "system"
+			}
+		],
+		"requires": [
+			{
+				"id": "lib-wrapper",
+				"type": "module",
+				"compatibility": {
+					"minimum": "1.13.0.0"
+				},
+				"reason": "libWrapper is used to patch Foundry methods and functions, extending or altering their functionality."
+			}
+		],
+		"conflicts": [
+			{
+				"id": "better-rolltables",
+				"type": "module",
+				"reason": "Better Rolltables is incompatible with the \"Render >3 Levels of Folder Nesting\" option, which will be disabled."
+			}
+		]
+	},
+	"media": [
+		{
+			"type": "setup",
+			"url": "modules/plutonium/media/img/thumbnail-setup.webp"
+		}
+	],
+	"documentTypes": {
+		"JournalEntryPage": {
+			"url": {}
+		}
+	},
+	"flags": {
+		"attributions": "https://raw.githubusercontent.com/hectorhcdev/plutonium-next/master/ATTRIBUTIONS.md"
+	}
+}
