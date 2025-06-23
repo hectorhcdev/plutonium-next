@@ -90,7 +90,7 @@
 	"media": [
 		{
 			"type": "setup",
-			"url": "modules/plutonium/media/img/thumbnail-setup.webp"
+			"url": "modules/plutonium-HomebrewHC/media/img/thumbnail-setup.webp"
 		}
 	],
 	"documentTypes": {
